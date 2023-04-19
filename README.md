@@ -4,8 +4,9 @@ Hola CoderHouse!
 
 18/04 - 2nda entrega 
 
-Páginas con grid: "About Me" / "Work & Portfolio"
-Todas tienen bootstrap responsive en la navbar
+* Todo se encuentra dentro de la rama MASTER
+* Páginas con grid: "About Me" / "Work & Portfolio"
+* Todas tienen bootstrap responsive en la navbar
 
 Issues:
 Debo trabajar en el diseño para la entrega final
