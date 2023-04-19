@@ -9,9 +9,9 @@ Hola CoderHouse!
 * Todas tienen bootstrap responsive en la navbar
 
 Issues:
-Debo trabajar en el diseño para la entrega final
-Debo trabajar en el carrousel de novedades con bootstrap
-No he llegado a aplicar los MediaQueries
+Debo trabajar en el diseño para la entrega final;
+Debo trabajar en el carrousel de novedades con bootstrap;
+No he llegado a aplicar los MediaQueries;
 
 <!--
 **BrianCassoli/briancassoli** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
