@@ -2,11 +2,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Kalam:wght@300&display=swap");
 nav {
+  grid-area: nav;
   background-color: rgb(23, 23, 27);
   position: fixed;
   top: 0px;
   left: 0px;
   z-index: 3;
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
 }
 nav .container-fluid {
   background-color: rgb(23, 23, 27);
@@ -15,7 +19,7 @@ nav .container-fluid {
   position: fixed;
   top: 0px;
   left: 0px;
-  border-bottom: solid 1px rgb(167, 180, 196);
+  border-bottom: none;
 }
 
 .navbar {
@@ -45,12 +49,18 @@ nav .container-fluid {
   padding: 0px;
 }
 
+#nav-index {
+  border-bottom: solid 1px rgb(184, 153, 68);
+}
+
 #footer_mine {
+  grid-area: footer;
   display: flex;
   justify-content: center;
   width: 100%;
   background-color: rgb(23, 23, 27);
-  border-top: solid 1px rgb(167, 180, 196);
+  border-top: solid 1px rgb(184, 153, 68);
+  border-bottom: none;
 }
 #footer_mine .footer-icons {
   display: flex;
@@ -92,29 +102,36 @@ nav .container-fluid {
   border-bottom: solid 1px rgb(167, 180, 196);
 }
 #news .carousel {
-  width: 500px;
+  width: 50%;
   font-size: 15px;
 }
 #news .carousel h5 {
   font-size: 20px;
 }
 
-body {
-  display: flex;
-  flex-direction: column;
+#body_index {
+  display: grid;
+  align-items: stretch;
+  grid-template-columns: 1fr;
+  grid-template-rows: 70px 2fr 80px;
+  grid-template-areas: "nav" "main" "footer";
   background: rgb(23, 23, 27);
+  height: 100vh;
+  /* RESPONSIVE */
 }
-
-#contenedor-banner-index {
+#body_index .main_index {
+  grid-area: main;
   display: flex;
-  width: 60%;
+  width: 100%;
   background-color: black;
 }
-#contenedor-banner-index img {
+#body_index .main_index #contenedor-banner-index {
+  background-color: black;
+}
+#body_index .main_index #contenedor-banner-index img {
   width: 100%;
 }
-
-#contenedor-texto-index {
+#body_index .main_index #contenedor-texto-index {
   font-family: "Kalam", cursive;
   color: aliceblue;
   background-color: black;
@@ -128,50 +145,52 @@ body {
   align-items: flex-start;
   width: 40%;
 }
-#contenedor-texto-index p {
+#body_index .main_index #contenedor-texto-index p {
   font-family: "Kalam", cursive;
   font-size: 15px;
 }
-#contenedor-texto-index p ul li {
+#body_index .main_index #contenedor-texto-index p ul {
   font-family: "Kalam", cursive;
   list-style: circle;
-  font-size: 15px;
   padding-left: 40px;
 }
-
-#B {
+#body_index .main_index #contenedor-texto-index p ul li {
+  font-family: "Kalam", cursive;
+}
+#body_index #B {
   color: rgb(167, 180, 196);
   font-size: 25px;
   font-family: "Kalam", cursive;
 }
-
-#plus {
+#body_index #plus {
   color: rgb(255, 222, 77);
   font-size: 25px;
   font-family: "Kalam", cursive;
 }
-
-/* RESPONSIVE */
 @media (width < 850px) {
-  .main_index {
+  #body_index .main_index {
+    grid-area: main;
     display: grid;
     justify-items: center;
-    grid-template-columns: 1fr;
+    grid-template-columns: 100%;
     grid-template-rows: 2fr;
     grid-template-areas: "desk" "texto";
   }
-  #contenedor-banner-index {
+  #body_index .main_index #contenedor-banner-index {
     grid-area: desk;
+    display: flex;
+    align-items: flex-start;
     background-color: black;
-    width: 100%;
+    height: 100%;
   }
-  #contenedor-texto-index {
+  #body_index .main_index #contenedor-texto-index {
     grid-area: texto;
-    width: 100%;
-    font-size: 20px;
-    padding: 30px;
+    width: 100vw;
+    font-size: 15px;
+    padding: 10px;
   }
 }
+
 .main_grid {
   display: grid;
   grid-template-columns: 50% 50%;
@@ -186,22 +205,22 @@ body {
   justify-content: center;
   color: rgb(184, 153, 68);
   background-color: rgb(51, 55, 67);
-  border-bottom: solid 1px rgb(167, 180, 196);
+  border-bottom: solid 1px rgb(184, 153, 68);
   font-size: 21px;
   letter-spacing: 1px;
   padding-left: 10px;
   height: 100%;
   position: fixed;
-  top: 71px;
+  top: 70px;
   width: 100%;
   height: 50px;
 }
 
 .t1_img {
   grid-area: img1;
-  height: 100%;
+  width: 100%;
   padding-bottom: 50px;
-  margin-top: 50px;
+  margin-top: 100px;
 }
 
 .t1_p {
@@ -332,7 +351,7 @@ body {
 }
 .main_resume .h_resume {
   background-color: rgb(51, 55, 67);
-  border-bottom: solid 1px rgb(167, 180, 196);
+  border-bottom: solid 1px rgb(184, 153, 68);
   width: 100%;
   padding: 10px;
   padding-top: 10px;
@@ -343,7 +362,7 @@ body {
   align-content: center;
   justify-content: center;
   position: fixed;
-  top: 71px;
+  top: 70px;
 }
 .main_resume .resume {
   padding-top: 20px;
@@ -358,26 +377,30 @@ body {
 }
 
 #body_contact {
+  display: grid;
+  align-items: stretch;
+  grid-template-columns: 1fr;
+  grid-template-rows: 70px 2fr 80px;
+  grid-template-areas: "nav" "main" "footer";
   height: 100vh;
 }
 #body_contact .main-contact {
+  grid-area: main;
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
   background-color: rgb(62, 62, 82);
-  margin-top: 0px;
-  padding-top: 0px;
+  margin: 0px;
+  padding: 0px;
 }
 #body_contact .main-contact h2 {
-  position: absolute;
-  top: 70px;
-  left: 0px;
   width: 100%;
   text-align: center;
   font-size: 21px;
   letter-spacing: 1px;
   color: rgb(184, 153, 68);
   background-color: rgb(51, 55, 67);
-  border-bottom: solid 1px rgb(167, 180, 196);
+  border-bottom: solid 1px rgb(184, 153, 68);
   padding-top: 10px;
   padding-bottom: 10px;
 }
@@ -456,14 +479,7 @@ body {
   font-family: "Roboto Flex", sans-serif;
   margin: 0px;
   padding: 0px;
-}
-
-main {
-  margin-top: 54px;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  background-color: black;
+  height: auto;
 }
 
 /*# sourceMappingURL=main.css.map */

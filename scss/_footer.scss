@@ -1,9 +1,11 @@
 #footer_mine{
+    grid-area: footer;
     display: flex;
     justify-content: center;
     width: 100%;
     background-color: $mainBgColor;
-    border-top: $sectionBorder;
+    border-top: $yellowBorder;
+    border-bottom: none;
       
     .footer-icons{
         display: flex;

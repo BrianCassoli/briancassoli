@@ -1,9 +1,13 @@
 nav{
+    grid-area: nav;
     background-color: $mainBgColor;
     position: fixed;
     top: 0px;
     left: 0px;
     z-index: 3;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
 
     .container-fluid{
         background-color: $mainBgColor;
@@ -12,7 +16,7 @@ nav{
         position: fixed;
         top: 0px;
         left: 0px;
-        border-bottom: $sectionBorder;
+        border-bottom: none;
     }
 }
 
@@ -42,4 +46,8 @@ nav{
 .bg-body-tertiary{
     margin:0px;
     padding: 0px;
+}
+
+#nav-index{
+    border-bottom: $yellowBorder;
 }
