@@ -2,7 +2,7 @@
     display: grid;
     align-items: stretch;
     grid-template-columns: 1fr;
-    grid-template-rows: 70px 2fr 80px;
+    grid-template-rows: 70px 2fr 90px;
     grid-template-areas: 
     "nav"
     "main"
@@ -14,7 +14,7 @@
         grid-area: main;
         display: flex;
         flex-direction: column;
-        justify-content: flex-start;
+        align-items: center;
         background-color: $secondaryBgColor;
         margin: 0px;
         padding: 0px;
@@ -75,6 +75,7 @@
         display:flex;
         flex-direction: column;
         align-items: center;
+        width: 100%;
         margin-bottom: 40px;
 
         #boton_enviar{

@@ -113,7 +113,7 @@ nav .container-fluid {
   display: grid;
   align-items: stretch;
   grid-template-columns: 1fr;
-  grid-template-rows: 70px 2fr 80px;
+  grid-template-rows: 70px 2fr 90px;
   grid-template-areas: "nav" "main" "footer";
   background: rgb(23, 23, 27);
   height: 100vh;
@@ -148,14 +148,54 @@ nav .container-fluid {
 #body_index .main_index #contenedor-texto-index p {
   font-family: "Kalam", cursive;
   font-size: 15px;
+  margin: 3px;
 }
-#body_index .main_index #contenedor-texto-index p ul {
-  font-family: "Kalam", cursive;
-  list-style: circle;
-  padding-left: 40px;
+#body_index #p1 {
+  color: rgb(255, 222, 77);
+  background-color: rgb(101, 86, 16);
+  border-radius: 5px;
+  text-align: center;
+  list-style: none;
 }
-#body_index .main_index #contenedor-texto-index p ul li {
-  font-family: "Kalam", cursive;
+#body_index #p2 {
+  color: rgb(152, 175, 255);
+  background-color: rgb(17, 32, 104);
+  border-radius: 5px;
+  text-align: center;
+}
+#body_index #p3 {
+  color: rgb(253, 144, 144);
+  background-color: rgb(112, 18, 18);
+  border-radius: 5px;
+  text-align: center;
+}
+#body_index #p4 {
+  color: rgb(135, 194, 124);
+  background-color: rgb(28, 90, 17);
+  border-radius: 5px;
+  text-align: center;
+  padding-right: 5px;
+  padding-left: 5px;
+}
+#body_index #p5 {
+  color: rgb(120, 250, 200);
+  background-color: rgb(17, 92, 63);
+  border-radius: 5px;
+  text-align: center;
+  padding-right: 5px;
+  padding-left: 5px;
+}
+#body_index #p6 {
+  color: rgb(231, 128, 180);
+  background-color: rgb(98, 17, 58);
+  border-radius: 5px;
+  text-align: center;
+}
+#body_index #p7 {
+  color: rgb(255, 163, 77);
+  background-color: rgb(97, 56, 17);
+  border-radius: 5px;
+  text-align: center;
 }
 #body_index #B {
   color: rgb(167, 180, 196);
@@ -365,8 +405,8 @@ nav .container-fluid {
   top: 70px;
 }
 .main_resume .resume {
-  padding-top: 20px;
-  padding-bottom: 50px;
+  padding-top: 60px;
+  padding-bottom: 30px;
   padding-left: 100px;
   padding-right: 100px;
   display: flex;
@@ -380,7 +420,7 @@ nav .container-fluid {
   display: grid;
   align-items: stretch;
   grid-template-columns: 1fr;
-  grid-template-rows: 70px 2fr 80px;
+  grid-template-rows: 70px 2fr 90px;
   grid-template-areas: "nav" "main" "footer";
   height: 100vh;
 }
@@ -388,7 +428,7 @@ nav .container-fluid {
   grid-area: main;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  align-items: center;
   background-color: rgb(62, 62, 82);
   margin: 0px;
   padding: 0px;
@@ -441,6 +481,7 @@ nav .container-fluid {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
   margin-bottom: 40px;
 }
 #body_contact .contenedor_form #boton_enviar {

@@ -2,7 +2,7 @@
     display: grid;
     align-items: stretch;
     grid-template-columns: 1fr;
-    grid-template-rows: 70px 2fr 80px;
+    grid-template-rows: 70px 2fr 90px;
     grid-template-areas: 
     "nav"
     "main"
@@ -43,24 +43,62 @@
             align-items: flex-start;
             width: 40%;
 
-                p{
-                    font-family: 'Kalam', cursive;
-                    font-size: 15px;
-
-                    ul{ 
-                            font-family: 'Kalam', cursive;
-                            list-style: circle;
-                            padding-left: 40px;
+                    p{
+                        font-family: 'Kalam', cursive;
+                        font-size: 15px;
+                        margin: 3px;                            
                                 
-                                li{font-family: 'Kalam', cursive;
-                            
-                                }
-                        }
-                }
-        }
+                    }
+            }
+    }
+
+#p1{
+    color:rgb(255, 222, 77);
+    background-color:rgb(101, 86, 16) ;
+    border-radius: 5px;
+    text-align: center;
+    list-style: none;
 }
-
-
+#p2{
+    color:rgb(152, 175, 255);
+    background-color:rgb(17, 32, 104) ;
+    border-radius: 5px;
+    text-align: center;
+}
+#p3{
+    color:rgb(253, 144, 144);
+    background-color:rgb(112, 18, 18) ;
+    border-radius: 5px;
+    text-align: center;
+}
+#p4{
+    color:rgb(135, 194, 124);
+    background-color:rgb(28, 90, 17);
+    border-radius: 5px;
+    text-align: center;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+#p5{
+    color:rgb(120, 250, 200);
+    background-color:rgb(17, 92, 63) ;
+    border-radius: 5px;
+    text-align: center;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+#p6{
+    color:rgb(231, 128, 180);
+    background-color:rgb(98, 17, 58) ;
+    border-radius: 5px;
+    text-align: center;
+}
+#p7{
+    color:rgb(255, 163, 77);
+    background-color:rgb(97, 56, 17) ;
+    border-radius: 5px;
+    text-align: center;
+}
 #B{
     color: $mainColor;
     font-size: 25px;
@@ -72,9 +110,6 @@
     font-size: 25px;
     font-family: 'Kalam', cursive;
 }
-
-
-
 
 
         /* RESPONSIVE */
